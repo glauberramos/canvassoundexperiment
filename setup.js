@@ -1,5 +1,6 @@
 var canvas;
 var context;
+var Sound;
 
 $(function() {
   canvas = document.getElementById('canvas');

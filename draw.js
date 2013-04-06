@@ -6,7 +6,7 @@ Draw = (function() {
 	    for(key in bugs) {
 	      var width = $('#canvas').width(),
 	         height = $('#canvas').height(),
-	         radius = 30,
+	         radius = 20,
 	            hue = Math.floor(bugs[key].x / width * 360),
 	     saturation = Math.floor(bugs[key].y / height * 100),
 	      lightness = Math.floor(bugs[key].y / height * 100);
@@ -23,6 +23,10 @@ Draw = (function() {
 	      } else {
 	        bugs[key].x = 0;
 	        //delete bugs[key];
+	      }
+
+	      if((bugs[key].x > ($(window).width()/2 - 5)) && (bugs[key].x < ($(window).width()/2 + 5))) {
+	      	Sound.playSound(bugs[key].y, bugs[key].x, false);
 	      }
 	    }
 	  }

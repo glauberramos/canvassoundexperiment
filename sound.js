@@ -10,7 +10,7 @@ Sound = (function() {
         }
 
         var request = new XMLHttpRequest();
-        request.open('GET', 'sound.mp3', true);
+        request.open('GET', 'sound3.mp3', true);
         request.responseType = 'arraybuffer';
         request.addEventListener('load', bufferSound, false);
         request.send();
@@ -30,9 +30,9 @@ Sound = (function() {
             gain.gain.value = volume;
 
             if (quick) {
-                sound.noteGrainOn(0., .2, .4);
+                sound.noteGrainOn(0., .1, .1);
             } else {
-                sound.noteOn(0);
+                 sound.noteGrainOn(0., .1, .1);
             }
         }
     };
