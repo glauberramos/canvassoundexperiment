@@ -1,4 +1,10 @@
+var canvas;
+var context;
+
 $(function() {
+  canvas = document.getElementById('canvas');
+  context = canvas.getContext('2d');
+
   $('#canvas').attr('width', $(window).width());
   $('#canvas').attr('height', $(window).height() - 60);
 
