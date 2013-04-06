@@ -1,0 +1,26 @@
+body {
+	margin: 0;
+}
+
+header {
+	height: 38px;
+	background: #fff;
+	border-bottom: 6px solid #D6362E;
+}
+
+#clear {
+	margin: 6px 10px; 
+	font-size: 1.1em;
+	width: 100px;
+	border: 0;
+	background: white;
+	color: #333;
+	
+	border-radius: 3px;
+	border: #88af28 1px solid;
+	padding: 4px;
+	display: inline-block;
+	line-height: 1em;
+	cursor: pointer;
+	text-decoration: none;
+}
