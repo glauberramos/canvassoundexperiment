@@ -3,24 +3,26 @@ body {
 }
 
 header {
-	height: 38px;
-	background: #fff;
-	border-bottom: 6px solid #D6362E;
+	background: white;
+	border-bottom: 3px solid #999;
+	height: 50px;
 }
 
-#clear {
-	margin: 6px 10px; 
+.button {
+	margin: 10px 10px;
 	font-size: 1.1em;
 	width: 100px;
 	border: 0;
-	background: white;
-	color: #333;
-	
+	background: #2AAF6B;
+	color: white;
 	border-radius: 3px;
-	border: #88af28 1px solid;
-	padding: 4px;
 	display: inline-block;
 	line-height: 1em;
 	cursor: pointer;
 	text-decoration: none;
+	padding: 7px;
+}
+
+#canvas {
+	background: #ddd;
 }

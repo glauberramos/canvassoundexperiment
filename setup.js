@@ -1,6 +1,6 @@
 $(function() {
-  $('#canvas').attr('width', $(window).width() - 40);
-  $('#canvas').attr('height', $(window).height() - 40);
+  $('#canvas').attr('width', $(window).width());
+  $('#canvas').attr('height', $(window).height() - 60);
 
   window.requestAnimFrame = (function(callback) {
     return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
