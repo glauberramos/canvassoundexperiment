@@ -9,7 +9,7 @@ $(function() {
   // });
 
   $('#content').click(function(event) {
-    bugs.push({ x: event.pageX, y: event.pageY - 40 });
+    bugs.push({ x: event.pageX + 15, y: event.pageY - 38 });
   });
 
   $('#stop').click(function() {

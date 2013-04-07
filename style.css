@@ -24,5 +24,6 @@ header {
 }
 
 #canvas {
+	cursor: url(cursor.png), auto;
 	background: #111;
 }
