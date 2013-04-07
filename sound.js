@@ -30,9 +30,9 @@ Sound = (function() {
             gain.gain.value = volume;
 
             if (quick) {
-                sound.noteGrainOn(0., .1, .1);
+                sound.noteGrainOn(0., .1, .01);
             } else {
-                 sound.noteGrainOn(0., .1, .1);
+                 sound.noteGrainOn(0., .1, .01);
             }
         }
     };
