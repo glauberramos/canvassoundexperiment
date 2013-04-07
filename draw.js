@@ -16,10 +16,10 @@ Draw = (function() {
       	var width = $('#canvas').width(),
 	         height = $('#canvas').height();
 	    
-	      context.lineWidth = 5;
+	      context.lineWidth = 3;
       	context.beginPath();
       	context.moveTo(lines[key].x,0);
-      	context.strokeStyle = '#ccc';
+      	context.strokeStyle = '#333';
       	context.lineTo(lines[key].x,$(window).height());
       	context.stroke();
 
