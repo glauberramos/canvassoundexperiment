@@ -6,6 +6,11 @@ $(function() {
   canvas = document.getElementById('canvas');
   context = canvas.getContext('2d');
 
+  var numberLines = $(window).width() / 40;
+  for (i = 1; i < numberLines; i++) {
+    lines.push({ x: i*40 });
+  }
+
   $('#canvas').attr('width', $(window).width());
   $('#canvas').attr('height', $(window).height() - 60);
 

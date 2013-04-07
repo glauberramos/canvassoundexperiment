@@ -1,16 +1,15 @@
 bugs = new Array();
+lines = new Array();
 
 $(function() {
   // $('#content').mousemove(function(event) {
   //   if(event.which==1) {
   //     bugs.push({ x: event.pageX, y: event.pageY - 40 });
-  //     //Sound.playSound(event.pageX, event.pageY, false);
   //   }
   // });
 
   $('#content').click(function(event) {
     bugs.push({ x: event.pageX, y: event.pageY - 40 });
-    //Sound.playSound(event.pageX, event.pageY, false);
   });
 
   $('#stop').click(function() {
@@ -24,8 +23,10 @@ $(function() {
   });
 
   function animate() {
-    context.clearRect(0, 0, canvas.width, canvas.height);
-    Draw.draw();
+    //if (move) {
+      context.clearRect(0, 0, canvas.width, canvas.height);
+      Draw.draw();
+    //}
 
     requestAnimFrame(function() {
       animate();
